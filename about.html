@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenWare Engine // About</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="about">
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div>
+      <div class="logo-tag">OpenWare Middleware</div>
+      <h1>ABOUT OPENWARE</h1>
+      <p class="slogan">Engine goals, identity, and direction</p>
+    </div>
+    <aside class="status-panel">
+      <div class="status-title">PROJECT TYPE</div>
+      <div class="status-item"><span>License</span><strong>Open Source</strong></div>
+      <div class="status-item"><span>Focus</span><strong>Education + Prototyping</strong></div>
+      <div class="status-item"><span>Style</span><strong>Retro Low-Poly</strong></div>
+    </aside>
+  </header>
+
+  <nav class="retro-nav" aria-label="Main navigation">
+    <a class="nav-link" data-page="home" href="index.html">Home</a>
+    <a class="nav-link" data-page="features" href="features.html">Features</a>
+    <a class="nav-link" data-page="pipeline" href="pipeline.html">Pipeline</a>
+    <a class="nav-link" data-page="download" href="download.html">Download</a>
+    <a class="nav-link" data-page="about" href="about.html">About</a>
+  </nav>
+
+  <main class="layout-grid">
+    <section class="panel full-width">
+      <h2>Mission</h2>
+      <p>
+        OpenWare exists to provide a clean and understandable 3D engine baseline.
+        It is designed for developers who want direct control over rendering, gameplay flow,
+        and subsystem growth without fighting a huge framework.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>What It Already Has</h2>
+      <ul>
+        <li>OpenGL renderer and scene draw pass</li>
+        <li>Rigidbody physics with collisions</li>
+        <li>Resource loading for OBJ/PPM</li>
+        <li>Debug and settings overlays</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Expansion Direction</h2>
+      <ul>
+        <li>Animation system</li>
+        <li>Audio pipeline</li>
+        <li>Scripting and tooling</li>
+        <li>ECS architecture and networking</li>
+      </ul>
+    </section>
+
+    <section class="panel full-width">
+      <h2>Retro Line</h2>
+      <div class="marquee">
+        <div class="marquee-track">OPENWARE // BUILT FOR LEARNING // BUILT FOR HACKING // BUILT FOR GAMES //</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>OpenWare Engine Website</span>
+    <span id="clock">00:00:00</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

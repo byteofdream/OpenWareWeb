@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenWare Engine // Features</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="features">
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div>
+      <div class="logo-tag">OpenWare Middleware</div>
+      <h1>OPENWARE FEATURES</h1>
+      <p class="slogan">Subsystems ready for game prototyping</p>
+    </div>
+    <aside class="status-panel">
+      <div class="status-title">MODULE MAP</div>
+      <div class="status-item"><span>Core</span><strong>Math/Transform</strong></div>
+      <div class="status-item"><span>Renderer</span><strong>OpenGL</strong></div>
+      <div class="status-item"><span>Physics</span><strong>RigidBody</strong></div>
+    </aside>
+  </header>
+
+  <nav class="retro-nav" aria-label="Main navigation">
+    <a class="nav-link" data-page="home" href="index.html">Home</a>
+    <a class="nav-link" data-page="features" href="features.html">Features</a>
+    <a class="nav-link" data-page="pipeline" href="pipeline.html">Pipeline</a>
+    <a class="nav-link" data-page="download" href="download.html">Download</a>
+    <a class="nav-link" data-page="about" href="about.html">About</a>
+  </nav>
+
+  <main class="layout-grid">
+    <section class="panel full-width">
+      <h2>Engine Modules</h2>
+      <div class="cards-3">
+        <article class="card"><h3>Core</h3><p>Vec2/Vec3/Mat4 and Transform foundation.</p></article>
+        <article class="card"><h3>Renderer</h3><p>Shader, Mesh, Material, scene pass, stylized shading.</p></article>
+        <article class="card"><h3>Scene</h3><p>Entity, Camera, Light and world composition.</p></article>
+        <article class="card"><h3>Physics</h3><p>Rigidbody, gravity, impulses, sphere collision response.</p></article>
+        <article class="card"><h3>Resource</h3><p>OBJ model loading and PPM textures.</p></article>
+        <article class="card"><h3>UI</h3><p>Debug HUD, settings panel, about overlay.</p></article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Gameplay Entry</h2>
+      <p>Use <code>src/main.cpp</code> for your game loop and feature integration.</p>
+      <ul>
+        <li>Spawn entities in setup section</li>
+        <li>Apply gameplay logic per-frame</li>
+        <li>Use physics step for interactions</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Current Style</h2>
+      <p>Low-poly nostalgic look with soft directional lighting and optional wireframe mode.</p>
+      <div class="telemetry">
+        <span>FPS:</span> <strong id="fps">60</strong>
+        <span>FRAME:</span> <strong id="frametime">16.67 ms</strong>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>OpenWare Engine Website</span>
+    <span id="clock">00:00:00</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

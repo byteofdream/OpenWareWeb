@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenWare Engine // Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="home">
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div>
+      <div class="logo-tag">OpenWare Middleware</div>
+      <h1>OPENWARE ENGINE</h1>
+      <p class="slogan">Minimal open-source 3D engine in retro RenderWare spirit</p>
+    </div>
+    <aside class="status-panel">
+      <div class="status-title">ENGINE STATUS</div>
+      <div class="status-item"><span>Renderer</span><strong>Online</strong></div>
+      <div class="status-item"><span>Physics</span><strong>Online</strong></div>
+      <div class="status-item"><span>UI</span><strong>Online</strong></div>
+    </aside>
+  </header>
+
+  <nav class="retro-nav" aria-label="Main navigation">
+    <a class="nav-link" data-page="home" href="index.html">Home</a>
+    <a class="nav-link" data-page="features" href="features.html">Features</a>
+    <a class="nav-link" data-page="pipeline" href="pipeline.html">Pipeline</a>
+    <a class="nav-link" data-page="download" href="download.html">Download</a>
+    <a class="nav-link" data-page="about" href="about.html">About</a>
+  </nav>
+
+  <main class="layout-grid">
+    <section class="panel full-width">
+      <h2>About The Engine</h2>
+      <div class="hero-grid">
+        <div>
+          <p>
+            OpenWare is a compact C++17 engine focused on clarity and expandability.
+            It gives you a clean base for gameplay experiments, retro visuals, and tool growth.
+          </p>
+          <p>
+            Built with OpenGL + SDL2, it includes rendering, scene management, rigid body physics,
+            resource loading, and in-engine debug UI.
+          </p>
+        </div>
+        <div class="kpi-box">
+          <div class="kpi">C++17 + OpenGL</div>
+          <div class="kpi-label">Core tech stack</div>
+          <div class="kpi" style="margin-top:10px;">Modular Design</div>
+          <div class="kpi-label">Ready for custom game code</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Why OpenWare</h2>
+      <div class="cards-2">
+        <article class="card">
+          <h3>Readable Architecture</h3>
+          <p>Core, Renderer, Scene, Physics, Input, Resource, UI modules are easy to extend.</p>
+        </article>
+        <article class="card">
+          <h3>Fast Iteration</h3>
+          <p>Build with Ninja and iterate quickly in <code>src/main.cpp</code>.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Live Telemetry Preview</h2>
+      <p>Retro-style diagnostics inspired by old middleware status dashboards.</p>
+      <div class="telemetry">
+        <span>FPS:</span> <strong id="fps">60</strong>
+        <span>FRAME:</span> <strong id="frametime">16.67 ms</strong>
+      </div>
+    </section>
+
+    <section class="panel full-width">
+      <h2>Start Building</h2>
+      <p>Write game logic in <code>src/main.cpp</code> and grow from there.</p>
+      <div class="marquee">
+        <div class="marquee-track">OPENWARE // RETRO LOW-POLY PIPELINE // RIGIDBODY PHYSICS // DEBUG UI // BUILD_NINJA //</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>OpenWare Engine Website</span>
+    <span id="clock">00:00:00</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

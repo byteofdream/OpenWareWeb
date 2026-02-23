@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenWare Engine // Download</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="download">
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div>
+      <div class="logo-tag">OpenWare Middleware</div>
+      <h1>DOWNLOAD & BUILD</h1>
+      <p class="slogan">Developer setup and local build commands</p>
+    </div>
+    <aside class="status-panel">
+      <div class="status-title">TARGET</div>
+      <div class="status-item"><span>Build Dir</span><strong>build_ninja</strong></div>
+      <div class="status-item"><span>Generator</span><strong>Ninja</strong></div>
+      <div class="status-item"><span>Entry</span><strong>src/main.cpp</strong></div>
+    </aside>
+  </header>
+
+  <nav class="retro-nav" aria-label="Main navigation">
+    <a class="nav-link" data-page="home" href="index.html">Home</a>
+    <a class="nav-link" data-page="features" href="features.html">Features</a>
+    <a class="nav-link" data-page="pipeline" href="pipeline.html">Pipeline</a>
+    <a class="nav-link" data-page="download" href="download.html">Download</a>
+    <a class="nav-link" data-page="about" href="about.html">About</a>
+  </nav>
+
+  <main class="layout-grid">
+    <section class="panel full-width">
+      <h2>Get The Source</h2>
+      <p>Download OpenWare from GitHub:</p>
+      <pre><code>https://github.com/byteofdream/OpenWare</code></pre>
+      <p>Clone command:</p>
+      <pre><code>git clone https://github.com/byteofdream/OpenWare.git</code></pre>
+    </section>
+
+    <section class="panel full-width">
+      <h2>Dependencies (Fedora)</h2>
+      <pre><code>sudo dnf install gcc-c++ cmake ninja-build SDL2-devel mesa-libGL-devel pkgconf-pkg-config</code></pre>
+    </section>
+
+    <section class="panel">
+      <h2>Build</h2>
+      <pre><code>cmake -S . -B build_ninja -G Ninja
+cmake --build build_ninja -j4</code></pre>
+    </section>
+
+    <section class="panel">
+      <h2>Run</h2>
+      <pre><code>./build_ninja/OpenWareEngine</code></pre>
+      <p>Keep your game logic in <code>src/main.cpp</code> and refactor into your own game modules as needed.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>OpenWare Engine Website</span>
+    <span id="clock">00:00:00</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

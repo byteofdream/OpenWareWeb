@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenWare Engine // Pipeline</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="pipeline">
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div>
+      <div class="logo-tag">OpenWare Middleware</div>
+      <h1>RUNTIME PIPELINE</h1>
+      <p class="slogan">Frame-by-frame simulation and render flow</p>
+    </div>
+    <aside class="status-panel">
+      <div class="status-title">FRAME ORDER</div>
+      <div class="status-item"><span>Input</span><strong>Step 01</strong></div>
+      <div class="status-item"><span>Physics</span><strong>Step 02</strong></div>
+      <div class="status-item"><span>Render/UI</span><strong>Step 03</strong></div>
+    </aside>
+  </header>
+
+  <nav class="retro-nav" aria-label="Main navigation">
+    <a class="nav-link" data-page="home" href="index.html">Home</a>
+    <a class="nav-link" data-page="features" href="features.html">Features</a>
+    <a class="nav-link" data-page="pipeline" href="pipeline.html">Pipeline</a>
+    <a class="nav-link" data-page="download" href="download.html">Download</a>
+    <a class="nav-link" data-page="about" href="about.html">About</a>
+  </nav>
+
+  <main class="layout-grid">
+    <section class="panel">
+      <h2>Per-Frame Flow</h2>
+      <ol>
+        <li>Poll SDL input events</li>
+        <li>Update camera and gameplay controls</li>
+        <li>Run physics substeps with collision response</li>
+        <li>Render scene geometry</li>
+        <li>Render debug overlays and UI</li>
+      </ol>
+    </section>
+
+    <section class="panel">
+      <h2>Physics Notes</h2>
+      <ul>
+        <li>RigidBody integration with gravity and damping</li>
+        <li>Impulse-based sphere contact response</li>
+        <li>Positional correction to reduce overlap</li>
+      </ul>
+    </section>
+
+    <section class="panel full-width">
+      <h2>Realtime Monitor</h2>
+      <div class="telemetry">
+        <span>FPS:</span> <strong id="fps">60</strong>
+        <span>FRAME:</span> <strong id="frametime">16.67 ms</strong>
+      </div>
+      <div class="marquee">
+        <div class="marquee-track">INPUT -> PHYSICS -> RENDER -> DEBUG UI // STABLE FRAME LOOP //</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>OpenWare Engine Website</span>
+    <span id="clock">00:00:00</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
