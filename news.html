@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenWare Engine // News</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="news">
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div>
+      <div class="logo-tag">OpenWare Middleware</div>
+      <h1>NEWS & CHANGELOG</h1>
+      <p class="slogan">Short update notes and release snapshots</p>
+    </div>
+    <aside class="status-panel">
+      <div class="status-title">TRACKER</div>
+      <div class="status-item"><span>Entries</span><strong>03</strong></div>
+      <div class="status-item"><span>Current</span><strong>PS2 Filter Work</strong></div>
+      <div class="status-item"><span>Format</span><strong>Short Notes</strong></div>
+    </aside>
+  </header>
+
+  <nav class="retro-nav" aria-label="Main navigation">
+    <a class="nav-link" data-page="home" href="index.html">Home</a>
+    <a class="nav-link" data-page="features" href="features.html">Features</a>
+    <a class="nav-link" data-page="pipeline" href="pipeline.html">Pipeline</a>
+    <a class="nav-link" data-page="download" href="download.html">Download</a>
+    <a class="nav-link" data-page="about" href="about.html">About</a>
+    <a class="nav-link" data-page="news" href="news.html">News</a>
+  </nav>
+
+  <main class="layout-grid">
+    <section class="panel full-width">
+      <h2>Changelog Feed</h2>
+      <p>Compact updates for each milestone. Open any entry for full details.</p>
+      <div class="news-list">
+        <article class="news-item">
+          <div class="news-meta"><span class="badge badge-future">Update 03 (Future)</span><span>Visual Style Pass</span></div>
+          <h3>PS2 filter pipeline and nostalgic post-look</h3>
+          <p>Planned style release focused on PS2-era vibe: quantized colors, dither, vertex wobble, and stronger retro atmosphere.</p>
+          <a class="news-link" href="update-3.html">Open update page</a>
+        </article>
+
+        <article class="news-item">
+          <div class="news-meta"><span class="badge">Update 02</span><span>Content Pipeline Growth</span></div>
+          <h3>Materials, Lua hooks and audio support</h3>
+          <p>Added material loading flow, optional Lua script callbacks, and SDL2_mixer integration for music/SFX control.</p>
+          <a class="news-link" href="update-2.html">Open update page</a>
+        </article>
+
+        <article class="news-item">
+          <div class="news-meta"><span class="badge">Update 01</span><span>Initial Playable Core</span></div>
+          <h3>Engine loop, scene setup and debug HUD</h3>
+          <p>First complete playable baseline: camera movement, entity scene setup, frame timing, and in-engine debug overlay.</p>
+          <a class="news-link" href="update-1.html">Open update page</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>OpenWare Engine Website</span>
+    <span id="clock">00:00:00</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

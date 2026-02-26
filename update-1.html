@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenWare // Update 01</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="news">
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div>
+      <div class="logo-tag">OpenWare Middleware</div>
+      <h1>UPDATE 01</h1>
+      <p class="slogan">Initial playable baseline</p>
+    </div>
+    <aside class="status-panel">
+      <div class="status-title">MILESTONE</div>
+      <div class="status-item"><span>Build</span><strong>v1 Foundation</strong></div>
+      <div class="status-item"><span>State</span><strong>Released</strong></div>
+      <div class="status-item"><span>Scope</span><strong>Core Loop</strong></div>
+    </aside>
+  </header>
+
+  <nav class="retro-nav" aria-label="Main navigation">
+    <a class="nav-link" data-page="home" href="index.html">Home</a>
+    <a class="nav-link" data-page="features" href="features.html">Features</a>
+    <a class="nav-link" data-page="pipeline" href="pipeline.html">Pipeline</a>
+    <a class="nav-link" data-page="download" href="download.html">Download</a>
+    <a class="nav-link" data-page="about" href="about.html">About</a>
+    <a class="nav-link" data-page="news" href="news.html">News</a>
+  </nav>
+
+  <main class="layout-grid">
+    <section class="panel full-width">
+      <h2>Summary</h2>
+      <p>The first update established the base engine loop and made the project fully interactive from a gameplay perspective.</p>
+      <p>
+        This milestone was about turning a raw renderer into an actual playable foundation:
+        window lifecycle, input, camera control, entity placement, and a first-pass debug UI
+        all working together in one stable frame loop.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Included</h2>
+      <ul>
+        <li>Window + OpenGL context bootstrap</li>
+        <li>Camera controls and input handling</li>
+        <li>Basic scene setup with entities</li>
+        <li>Debug overlay for frame diagnostics</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Impact</h2>
+      <p>Created a stable base where renderer, physics, and gameplay scripting could be added incrementally.</p>
+      <p>
+        From this point, iteration speed improved a lot because every new feature could be tested in a
+        familiar runtime shell instead of isolated tech demos.
+      </p>
+      <a class="news-link" href="news.html">Back to changelog</a>
+    </section>
+
+    <section class="panel full-width">
+      <h2>Technical Notes</h2>
+      <div class="cards-3">
+        <article class="card">
+          <h3>Loop Discipline</h3>
+          <p>The frame loop separates input processing, simulation updates, and rendering so systems can stay modular.</p>
+        </article>
+        <article class="card">
+          <h3>Scene Bootstrap</h3>
+          <p>Entity creation and transform setup were standardized, which made level-style composition easier.</p>
+        </article>
+        <article class="card">
+          <h3>UI Baseline</h3>
+          <p>Debug HUD added immediate visibility into frame time and controls, reducing guesswork during tuning.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel full-width">
+      <h2>Why It Matters</h2>
+      <p>
+        Early engine projects often fail because they grow in disconnected parts.
+        Update 01 solved that by delivering a coherent runtime path first, then leaving clear extension points.
+      </p>
+      <p>
+        In practical terms, this release unlocked the next milestones: better materials, scripting hooks,
+        audio behavior, and visual style experiments.
+      </p>
+      <a class="news-link" href="news.html">Back to changelog</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>OpenWare Engine Website</span>
+    <span id="clock">00:00:00</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -28,6 +28,11 @@ Open in browser:
 - `pipeline.html` - runtime/frame pipeline explanation
 - `download.html` - GitHub link, dependencies, build and run commands
 - `about.html` - mission, direction, and project identity
+- `news.html` - changelog hub with short updates
+- `update-1.html` - details for update 01
+- `update-2.html` - details for update 02
+- `update-3.html` - future update page for PS2 filter (with before/after shots)
+- `media/changelog/` - local images for changelog entries
 
 ## Shared Assets
 

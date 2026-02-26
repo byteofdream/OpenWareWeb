@@ -349,6 +349,73 @@ pre {
   animation: scroll-left 14s linear infinite;
 }
 
+.news-list {
+  display: grid;
+  gap: 8px;
+}
+
+.news-item,
+.shot-card {
+  border: 1px solid #3d5d75;
+  background: linear-gradient(180deg, rgba(36, 55, 72, 0.78), rgba(8, 15, 22, 0.9));
+  box-shadow: inset 1px 1px 0 rgba(164, 194, 217, 0.2);
+  padding: 9px;
+}
+
+.news-meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--txt-dim);
+  margin-bottom: 6px;
+}
+
+.badge {
+  border: 1px solid #35536a;
+  background: #08111a;
+  color: var(--accent-cold);
+  padding: 2px 6px;
+  font-family: "Courier New", monospace;
+}
+
+.badge-future {
+  color: #ffcf83;
+  border-color: #6c5229;
+}
+
+.news-link {
+  color: #ffd58f;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(255, 213, 143, 0.65);
+}
+
+.news-link:hover {
+  color: #fff2d4;
+}
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 10px;
+}
+
+.shot-card {
+  margin: 0;
+}
+
+.shot-card img {
+  width: 100%;
+  display: block;
+  border: 1px solid #2f495c;
+}
+
+.shot-card figcaption {
+  margin-top: 8px;
+  color: var(--txt-dim);
+  font-size: 0.84rem;
+}
+
 .footer {
   max-width: 1180px;
   margin: 10px auto 0;
@@ -371,7 +438,8 @@ pre {
   .layout-grid,
   .hero-grid,
   .cards-2,
-  .cards-3 {
+  .cards-3,
+  .compare-grid {
     grid-template-columns: 1fr;
   }
 

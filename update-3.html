@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenWare // Update 03 (Future)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="news">
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div>
+      <div class="logo-tag">OpenWare Middleware</div>
+      <h1>UPDATE 03 (FUTURE)</h1>
+      <p class="slogan">PS2 filter style pass</p>
+    </div>
+    <aside class="status-panel">
+      <div class="status-title">MILESTONE</div>
+      <div class="status-item"><span>Build</span><strong>v3 Visual Pass</strong></div>
+      <div class="status-item"><span>State</span><strong>Planned</strong></div>
+      <div class="status-item"><span>Scope</span><strong>Aesthetic</strong></div>
+    </aside>
+  </header>
+
+  <nav class="retro-nav" aria-label="Main navigation">
+    <a class="nav-link" data-page="home" href="index.html">Home</a>
+    <a class="nav-link" data-page="features" href="features.html">Features</a>
+    <a class="nav-link" data-page="pipeline" href="pipeline.html">Pipeline</a>
+    <a class="nav-link" data-page="download" href="download.html">Download</a>
+    <a class="nav-link" data-page="about" href="about.html">About</a>
+    <a class="nav-link" data-page="news" href="news.html">News</a>
+  </nav>
+
+  <main class="layout-grid">
+    <section class="panel full-width">
+      <h2>Summary</h2>
+      <p>Third update is focused on PS2-era visual atmosphere: palette quantization, dither patterning, depth haze, and vertex jitter feel.</p>
+      <p>
+        The goal is not photorealism. The goal is character: imperfect geometry response, compressed color ramps,
+        and the iconic unstable edge feel that made many early-2000s games visually memorable.
+      </p>
+    </section>
+
+    <section class="panel full-width">
+      <h2>Before / After PS2 Filter</h2>
+      <div class="compare-grid">
+        <figure class="shot-card">
+          <img src="media/changelog/ps2-before.svg" alt="OpenWare scene before PS2 filter" />
+          <figcaption>Before filter: base stylized renderer.</figcaption>
+        </figure>
+        <figure class="shot-card">
+          <img src="media/changelog/ps2-after.svg" alt="OpenWare scene after PS2 filter" />
+          <figcaption>After filter: quantized tones, jitter, and dither.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Planned Additions</h2>
+      <ul>
+        <li>Toggleable PS2 mode in settings</li>
+        <li>Color banding and ordered dither</li>
+        <li>Vertex snap / wobble controls</li>
+        <li>Retro fog tuning presets</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Status</h2>
+      <p>This release page is marked as future and will be updated as visual tuning progresses.</p>
+      <p>
+        Current direction is to keep the effect configurable so users can move between subtle retro treatment
+        and aggressive PS2-like stylization depending on scene type.
+      </p>
+      <a class="news-link" href="news.html">Back to changelog</a>
+    </section>
+
+    <section class="panel full-width">
+      <h2>Technical Direction</h2>
+      <div class="cards-3">
+        <article class="card">
+          <h3>Vertex Stage</h3>
+          <p>Apply controlled position snapping and mild jitter in clip-space to emulate unstable vertex precision.</p>
+        </article>
+        <article class="card">
+          <h3>Fragment Stage</h3>
+          <p>Quantize final color output and add ordered dither to preserve readability while keeping retro texture.</p>
+        </article>
+        <article class="card">
+          <h3>Atmosphere</h3>
+          <p>Use stronger depth haze and reduced color contrast to recreate long-distance PS2 mood.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel full-width">
+      <h2>Release Criteria</h2>
+      <p>
+        Update 03 will be considered complete when the effect is visually strong, stable during camera movement,
+        and fully controllable from the in-engine settings without introducing disruptive artifacts.
+      </p>
+      <p>
+        The final delivery will include calibrated defaults, practical presets, and updated screenshots captured from real runtime scenes.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>OpenWare Engine Website</span>
+    <span id="clock">00:00:00</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

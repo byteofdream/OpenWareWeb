@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenWare // Update 02</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="news">
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div>
+      <div class="logo-tag">OpenWare Middleware</div>
+      <h1>UPDATE 02</h1>
+      <p class="slogan">Content and tools expansion</p>
+    </div>
+    <aside class="status-panel">
+      <div class="status-title">MILESTONE</div>
+      <div class="status-item"><span>Build</span><strong>v2 Systems</strong></div>
+      <div class="status-item"><span>State</span><strong>Released</strong></div>
+      <div class="status-item"><span>Scope</span><strong>Pipeline</strong></div>
+    </aside>
+  </header>
+
+  <nav class="retro-nav" aria-label="Main navigation">
+    <a class="nav-link" data-page="home" href="index.html">Home</a>
+    <a class="nav-link" data-page="features" href="features.html">Features</a>
+    <a class="nav-link" data-page="pipeline" href="pipeline.html">Pipeline</a>
+    <a class="nav-link" data-page="download" href="download.html">Download</a>
+    <a class="nav-link" data-page="about" href="about.html">About</a>
+    <a class="nav-link" data-page="news" href="news.html">News</a>
+  </nav>
+
+  <main class="layout-grid">
+    <section class="panel full-width">
+      <h2>Summary</h2>
+      <p>Second update focused on production-ready workflow pieces for assets, scripting hooks, and audio behavior.</p>
+      <p>
+        Instead of only improving rendering quality, this release invested in developer workflow:
+        getting content into the engine faster and making behavior easier to iterate without recompiling every tweak.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Included</h2>
+      <ul>
+        <li>Material file loading and texture slots</li>
+        <li>Optional Lua callback integration</li>
+        <li>SDL2_mixer music and SFX path</li>
+        <li>Runtime settings controls in debug panel</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Impact</h2>
+      <p>Engine moved from pure prototype to a stronger gameplay and content iteration baseline.</p>
+      <p>
+        Teams can now test art direction and gameplay reactions in shorter loops:
+        adjust assets, tune scripts, launch, and verify immediately.
+      </p>
+      <a class="news-link" href="news.html">Back to changelog</a>
+    </section>
+
+    <section class="panel full-width">
+      <h2>Pipeline Details</h2>
+      <div class="cards-3">
+        <article class="card">
+          <h3>Materials</h3>
+          <p>Material loading introduced a cleaner bridge between authored files and runtime shader parameters.</p>
+        </article>
+        <article class="card">
+          <h3>Scripting</h3>
+          <p>Optional Lua callbacks made it possible to prototype gameplay impulses and timing-driven logic quickly.</p>
+        </article>
+        <article class="card">
+          <h3>Audio</h3>
+          <p>SDL2_mixer integration added event feedback and background atmosphere, improving overall feel.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel full-width">
+      <h2>What Changed For Developers</h2>
+      <p>
+        Update 02 reduced friction between code and content. Asset iteration is smoother, script-driven behavior is practical,
+        and sound no longer needs external tooling to validate experience changes.
+      </p>
+      <p>
+        This update also prepared the engine for visual style passes by making runtime controls and asset data easier to tweak.
+      </p>
+      <a class="news-link" href="news.html">Back to changelog</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>OpenWare Engine Website</span>
+    <span id="clock">00:00:00</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
