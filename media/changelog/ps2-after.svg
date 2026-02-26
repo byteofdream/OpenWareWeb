@@ -1,1 +1,19 @@
-
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2c4358"/>
+      <stop offset="100%" stop-color="#10181f"/>
+    </linearGradient>
+    <pattern id="scan" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="rgba(0,0,0,0)"/>
+      <rect y="0" width="6" height="1" fill="rgba(255,255,255,0.12)"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="720" fill="url(#g2)"/>
+  <polygon points="120,640 300,140 540,640" fill="#4f351a"/>
+  <polygon points="420,660 740,80 1080,660" fill="#6d4a24"/>
+  <rect width="1280" height="720" fill="url(#scan)" opacity="0.28"/>
+  <rect x="46" y="40" width="460" height="120" fill="#0a121b" opacity="0.72"/>
+  <text x="70" y="96" fill="#ffd58f" font-family="Verdana, sans-serif" font-size="38">After PS2 Filter</text>
+  <text x="70" y="136" fill="#95a9bc" font-family="Verdana, sans-serif" font-size="24">quantized colors + jitter + dither</text>
+</svg>
